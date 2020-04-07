@@ -1,5 +1,6 @@
 <?php
-$socket = socket_create(AF_INET,SOCK_STREAM,SOL_UDP );
+header("Content-type:text/html;charset=utf-8");
+$socket = socket_create(AF_INET,SOCK_DGRAM,SOL_UDP);
 socket_connect($socket,'192.168.184.11',9502);
 $str ="这是一个UDP";
 socket_send($socket,$str,strlen($str),MSG_DONTROUTE);
