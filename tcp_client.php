@@ -9,4 +9,3 @@ $false = socket_recv($socket,$buf,2048,MSG_DONTWAIT);
     echo $buf.'\n';
 }*/
 echo $buf;
-socket_close($socket);
