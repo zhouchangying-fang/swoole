@@ -1,6 +1,6 @@
 <?php
 $socket = socket_create(AF_INET,SOCK_STREAM,SOL_TCP );
-socket_connect($socket,'127.0.0.1',9501);
+socket_connect($socket,'192.168.184.11',9501);
 $str ="这是一个发送信息";
 socket_send($socket,$str,strlen($str),MSG_DONTROUTE);
 $buf = "";
